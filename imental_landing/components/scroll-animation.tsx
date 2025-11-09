@@ -12,6 +12,8 @@ export default function ScrollAnimation({ children, className = '', delay = 0 }:
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const element = elementRef.current;
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -28,13 +30,13 @@ export default function ScrollAnimation({ children, className = '', delay = 0 }:
       }
     );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, [delay]);

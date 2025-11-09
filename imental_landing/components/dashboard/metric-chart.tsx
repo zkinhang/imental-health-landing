@@ -236,7 +236,7 @@ export default function MetricChart({ metricId }: MetricChartProps) {
               </div>
               <div className="flex items-center gap-2">
                 <Activity className="h-4 w-4 text-muted-foreground" />
-                <span className="text-xs text-muted-foreground">Last week's prediction</span>
+                <span className="text-xs text-muted-foreground">Last week&apos;s prediction</span>
               </div>
             </CardContent>
           </Card>
@@ -420,7 +420,7 @@ export default function MetricChart({ metricId }: MetricChartProps) {
         {forecastThisWeek !== null && actualThisWeek !== null && (
           <Alert variant={forecastAccuracy && forecastAccuracy > 85 ? "success" : "info"}>
             {forecastAccuracy && forecastAccuracy > 85 ? <CheckCircle2 className="h-4 w-4" /> : <Info className="h-4 w-4" />}
-            <AlertTitle>Last Week's Forecast vs Actual</AlertTitle>
+            <AlertTitle>Last Week&apos;s Forecast vs Actual</AlertTitle>
             <AlertDescription>
               We predicted <strong>{Math.round(forecastThisWeek)}</strong>, your actual was <strong>{actualThisWeek}</strong>
               {Math.abs(actualThisWeek - forecastThisWeek) <= forecastThisWeek * 0.05 ? (
