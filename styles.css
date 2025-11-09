@@ -1,0 +1,12 @@
+/* Additional styles - base styles are in index.html */
+
+/* Override for better responsiveness */
+@media (max-width: 1024px) {
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.analysis-card p strong {
+  display: inline;
+}
