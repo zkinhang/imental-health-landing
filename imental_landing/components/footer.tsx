@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-muted border-t border-border">
       <div className="container mx-auto px-5 py-12 text-center">
         <p className="text-sm text-muted-foreground">
-          2025 iMental State Tracker | Your mental health matters.
+          &copy; 2025 WithYou | Your mental health matters.
         </p>
         <p className="text-xs text-muted-foreground mt-2">
           Designed with care for your well-being 💙
