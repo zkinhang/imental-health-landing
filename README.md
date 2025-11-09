@@ -1,5 +1,7 @@
 This is a fully vibe coding project, for the JUMPSTARTER ZPIRE competition.
 
+Landing Page hosted on: https://imental-health-landing-osrg.vercel.app/
+
 # iMental Health Landing Page
 
 A modern, responsive landing page for the iMental State Tracker application, featuring AI-powered mental health monitoring and wellness tracking.
