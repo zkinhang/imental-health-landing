@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import RegisterDialog from "@/components/register-dialog";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,11 +29,12 @@ export default function Navigation() {
               How It Works
             </Link>
             <Link href="#dashboard-preview" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              Demo
+              Preview
             </Link>
             <Link href="#benefits" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               Benefits
             </Link>
+            <RegisterDialog />
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,6 +86,7 @@ export default function Navigation() {
             >
               Benefits
             </Link>
+            <RegisterDialog variant="outline" />
           </div>
         )}
       </div>

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import RegisterDialog from "@/components/register-dialog";
 
 export default function Hero() {
   return (
@@ -79,13 +80,15 @@ export default function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" asChild>
-            <Link href="#features">
-              Get Started <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
+          <RegisterDialog 
+            trigger={
+              <Button size="lg">
+                Request Demo <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            }
+          />
           <Button size="lg" variant="outline" asChild>
-            <Link href="#how-it-works">Learn More</Link>
+            <Link href="#features">Learn More</Link>
           </Button>
         </div>
       </div>
