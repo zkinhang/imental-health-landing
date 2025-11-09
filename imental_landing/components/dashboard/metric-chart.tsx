@@ -218,7 +218,7 @@ export default function MetricChart({ metricId }: MetricChartProps) {
             <div className="text-4xl md:text-5xl font-bold text-orange-600 dark:text-orange-500">{futureValues[2]}</div>
             <div className="flex items-center gap-2">
               <Badge variant={isUpwardTrend ? "default" : isDownwardTrend ? "secondary" : "outline"} className="text-xs">
-                {isUpwardTrend ? '↗ Improving' : isDownwardTrend ? '↘ Declining' : '→ Stable'}
+                {isUpwardTrend ? '↗ Increasing' : isDownwardTrend ? '↘ Decreasing' : '→ Stable'}
               </Badge>
             </div>
           </CardContent>
