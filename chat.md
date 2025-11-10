@@ -1,7 +1,7 @@
 ## AI Interaction Overview
 
 ### AI Tool Used
-**Gemini 2.5 Pro**
+**Gemini 2.5 Pro**,
 **Claude Sonnet 4.5**
 
 ### Role of AI
