@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import RegisterDialog from "@/components/register-dialog";
@@ -14,7 +15,14 @@ export default function Navigation() {
       <div className="container mx-auto px-5 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-xl font-bold text-primary flex items-center gap-2">
-            <span>💙</span> iMental State Tracker
+            <Image 
+              src="/icon.png" 
+              alt="iMental Logo" 
+              width={24} 
+              height={24}
+              className="w-6 h-6"
+            />
+            iMental State Tracker
           </Link>
 
           {/* Desktop Navigation */}

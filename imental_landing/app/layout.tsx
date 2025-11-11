@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "iMental State Tracker - AI-Powered Mental Health Monitoring",
   description: "Monitor your daily activities, detect potential symptoms of mental health concerns, and receive personalized AI-driven insights with tailored recommendations.",
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({
