@@ -29,7 +29,7 @@ export default function DashboardPreview() {
         {
           type: "destructive",
           title: "AI Recommendation",
-          description: "Score is below recommended range. Prioritizing consistent sleep is crucial for recovery.",
+          description: "🌙 Establish a regular sleep schedule. Avoid caffeine after 4 p.m. Try relaxation routines (e.g., deep breathing, light reading).",
         },
         {
           type: "destructive",
@@ -56,7 +56,7 @@ export default function DashboardPreview() {
         {
           type: "destructive",
           title: "AI Recommendation",
-          description: "Activity score is below recommended range. Fatigue or changes in routine may be a factor.",
+          description: "🏃‍♂️ Go for light exercise such as a 20-30 min walk or stretching. Rebuild consistency gradually. Avoid overexertion. ",
         },
         {
           type: "info",
@@ -95,7 +95,7 @@ export default function DashboardPreview() {
         {
           type: "destructive",
           title: "AI Recommendation",
-          description: "Blood pressure is now in the elevated range. It's important to monitor this, especially after stressful periods.",
+          description: "🧘‍♂️ Practice deep breathing or short mindfulness sessions. Reduce salty or processed food. Take short breaks between work.",
         },
         {
           type: "info",
